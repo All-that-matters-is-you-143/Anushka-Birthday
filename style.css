@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.first {
+  width: 100%;
+  height: 768px;
+  display: flex;
+  align-content: center;
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.first img {
+  width: 100%;
+  height: auto;
+
+}
+
+.second {
+  font-family: sans-serif;
+  background: #000;
+  text-align: center;
+  /* padding: 30px; */
+  padding-top: 15px;
+  margin: 0;
+  overflow-x: hidden;
+  height: 60vh;
+  perspective: 900px;
+  /* 👈 For 3D effect */
+
+}
+
+#bday {
+  color: yellow;
+  font-size: 2.5em;
+  margin-bottom: 70px;
+}
+
+.slide {
+  position: relative;
+  width: 200px;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform-style: preserve-3d;
+  animation: rotate 15s infinite linear;
+}
+
+.slide img {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Position each image in 3D space */
+.slide img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.slide img:nth-child(2) {
+  transform: rotateY(45deg) translateZ(300px);
+}
+
+.slide img:nth-child(3) {
+  transform: rotateY(90deg) translateZ(300px);
+}
+
+.slide img:nth-child(4) {
+  transform: rotateY(135deg) translateZ(300px);
+}
+
+.slide img:nth-child(5) {
+  transform: rotateY(180deg) translateZ(300px);
+}
+
+.slide img:nth-child(6) {
+  transform: rotateY(225deg) translateZ(300px);
+}
+
+.slide img:nth-child(7) {
+  transform: rotateY(270deg) translateZ(300px);
+}
+
+.slide img:nth-child(8) {
+  transform: rotateY(315deg) translateZ(300px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+.next {
+  background-color: #000;
+  text-align: end;
+  width: 100%;
+  background-color: #000;
+}
+
+.next button {
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: rgb(238, 255, 2);
+  height: 35px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+  padding: 2px 5px;
+  font-family: Lucida Handwriting;
+}
+
+
+.song {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: static;
+}
+
+.song audio source {
+  background: #000;
+  width: 50px;
+}
+
+pre {
+  font-size: 40px;
+  width: 92%;
+  display: flex;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Papyrus;
+  text-align: justify;
+  color: white;
+  padding-left: 8%;
+  padding-bottom: 10px;
+}
+
+pre span {
+  color: yellow;
+}
+
+body {
+  position: relative;
+}
+
+.story {
+  background-color: #000;
+  color: rgb(241, 241, 241);
+  height: auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#bilawli {
+  width: 100%;
+  height: auto;
+  position: relative;
+  opacity: 60%;
+}
+
+.story h1,
+p {
+  font-family: Papyrus;
+  height: auto;
+  text-align: center;
+}
+
+#top1 {
+  font-size: 50px;
+  color: rgb(0, 255, 0);
+  position: absolute;
+  text-align: center;
+  top: 3%;
+  left: 13%;
+}
+
+#top2 {
+  font-size: 25px;
+  color: rgb(248, 255, 35);
+  padding-top: 10px;
+  position: absolute;
+  top: 12%;
+  left: 27%;
+}
+
+.story p {
+  /* padding: 30px 50px; */
+  position: absolute;
+  text-align: justify;
+  font-size: 19.6px;
+  top: 20%;
+  left: 3%;
+  right: 3%;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.end {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.end a,
+p {
+  display: flex;
+}
+
+.end p {
+  margin: 10px 15%;
+}
+
+.head {
+  background-color: #000000be;
+text-align: center;
+width: 100%;
+}
+
+.head h1 {
+  font-size: 35px;
+  color: rgb(208, 255, 0);
+  text-align: center;
+  font-family: Papyrus;
+  padding-top: 25px;
+}
+
+.head p {
+  font-size: 25px;
+  color: rgb(9, 255, 0);
+  padding-top: 25px;
+  width: 60%;
+  margin: 0 23%;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.list{
+  background-color: #000000be;
+}
+.list ul {
+  list-style: disc;
+padding: 20px 9%;
+color:#fff;
+}
+
+.list ul li{
+  font-size: 23px;
+  line-height: 37.5px;
+  padding-bottom: 5px;
+
+}
+.list h1{
+    font-size: 25px;
+  color: yellow;
+  text-align: center;
+  font-family: Papyrus;
+  /* background-color: #000; */
+  padding-bottom: 8px;
+}
+.main{
+  width: 100%;
+  background-image: url(Rotating/Collage2.jpg);
+    background-size: cover;   /* cover / contain / auto */
+  background-repeat: no-repeat;  
+  background-position: center; 
+}
+.memories{
+  background-color: #000;
+}
+.memory{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.memory img{
+  width: 100%;
+  height: 155.25%;
+border: 3px rgb(255, 255, 255) solid;
+border-radius: 15px;
+margin: 10px;
+}
+
+.memories div h1{
+      font-size: 35px;
+  color: rgb(208, 255, 0);
+  text-align: center;
+  font-family: Papyrus;
+  padding-bottom: 8px;
+  padding-top: 10px;
+}
+
+.baap{
+  width: 25%;
+  height: 31.25%;
+}
+.baap p{
+  display: none;
+}
+
+.baap:hover p{
+  display: block;
+  text-align: justify;
+  font-size: 25px;
+width: 100%;
+height: 155.25%;
+font-weight: bold;
+background-color: antiquewhite;
+border: 3px rgb(255, 255, 255) solid;
+border-radius: 15px;
+margin: 10px;
+padding: 3px;
+line-height: 45px;
+}
+
+.baap:hover img{
+display: none;
+transition-duration: 1s;
+}
+
